@@ -1,5 +1,64 @@
 /* seletor universal */
-{
-    margin : 0;
-    
+* {
+    /* Zera amargem do documento */
+    margin: 0;
+    /* gera um espaçamento interno */
+    padding: 0;
+
 }
+/* seleto se tipo, aplica o css em uma tag */
+.h5{
+    color: blueviolet !important;
+}
+
+/* seletor de classe */
+.titulo{
+
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+    /* aplica margin em todas laterais */
+    /* margin: 10px; */
+    /* margin-left: 20px; */
+    /* aplicando espaçamento no superior o inferior */
+    /* e aplico tambens na laterais esquerda e direita */
+    margin: 0 10px 0 0;
+    /* aplicando espaçamento interno */
+    /* padding: 10px; */
+    padding: 0 10px;
+}
+.p{
+    background-color: aquamarine;
+}
+
+.imagem{
+    /* aplicando tamnho em largura */
+    width: 200px;
+    /* aplicando atamenho em altura */
+    height: 200px;
+}
+    .formulario{
+        background-color: rgb(255, 128, 0);
+            width: 200px;
+            margin: 0 auto;
+            /* alinha o conteudo interno, centraliza */
+            text-align: center;
+    }
+    .input-nome{
+        /* <!-- remover as bordas --> */
+        border: nome;
+        border-radius: 2px;
+        margin-left: 10px;
+        /* definir opacidade no campo texto */
+        opacity: 70%;
+    }
+    .botao{
+        background-color: cyan;
+        border: 0;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: large;
+        /* aplicando sombra no texto posição x, y blur*/
+        text-shadow: 5px 2px 5px rgba(212, 14, 57, 0.9);
+
+    }

@@ -1,0 +1,36 @@
+    .formulario{
+        background-color: rgb(93, 92, 91);
+            width: 200px;
+            margin: 0 auto;
+            /* alinha o conteudo interno, centraliza */
+            text-align: center;
+    }
+    .input-usuario{
+        /* <!-- remover as bordas --> */
+        border: nome;
+        border-radius: 2px;
+        margin-left: 10px;
+        /* definir opacidade no campo texto */
+        opacity: 70%;
+    }
+    .botao{
+        background-color: rgb(52, 52, 52);
+        border: 0;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: large;
+        /* aplicando sombra no texto posição x, y blur*/
+        text-shadow: 5px 2px 5px rgba(245, 245, 245, 0.9);
+
+    }
+    .titulo{
+    color: rgb(0, 0, 0);
+     text-align: center;
+    }
+    .imagem{
+    /* aplicando tamnho em largura */
+    width: 200px;
+    /* aplicando atamenho em altura */
+    height: 200px;
+}
