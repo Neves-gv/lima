@@ -7,19 +7,35 @@
 </head>
 <body>
     <h1 class="titulo">Tela de Decadastro</h1>
-    <a href="telainicial.html">inicial</a>
     <form class="formulario">
-    <label>Usuario</label>
-    <!--inserir um campo texto digitavel-->
-    <input type="text" class="input-usuario"><br>
-    <!-- input tipo senha -->
-    <label>gmail</label>
-    <input class="input-usuario" placeholder="gmail" type="password"><br>
-     <label>senha</label>
-     <input class="input-usuario" placeholder="digite uma senha" type="password"><br>
-     <label>digite a senha novamente</label>
-     <input class="input-usuario" placeholder="digite a senha novamente" type="password"><br>
-          <input href="#"type="button" class="botao" value="Cadastrar">
+        <!-- Nome -->
+        <label>nome completo</label>
+   <input type="nome" placeholder="Digite seu nome">
+      <!-- inserindo data -->
+       <br><label for="">Data de nacimento</label>
+       <input type="datetime-local">
+       <!-- input do tipo email  -->
+             <label>Digite seu email</label>
+        <input type="email" placeholder="Digite seu gmail">
+       <!-- Telefone  -->
+             <label>Digite seu telefone</label>
+        <input type="telefone" placeholder="Digite seu telefone">
+       <!-- sexo -->
+     <label>sexo</label>
+     <br>
+     <select class="selecao">
+     <option value=""select>Selecione o Sexo</option>
+     <option value="Homen">Homen</option>
+     <option value="Mulher">Mulher</option>
+     </select>
+     <br>
+     <!-- senhas -->
+        <label>senha</label>
+   <input type="senha" placeholder="Digite uma senha">
+             <label>digite a senha novamente</label>
+   <input type="senha" placeholder="Digite a senha da novamente">
     </form>
+    <a href="telainicial.html" class="tela-inicial">tela-inicial</a>
+    <a href="INDEX.html" class="tela-inicial">concelar</a>
 </body>
 </html>

@@ -62,3 +62,47 @@
         text-shadow: 5px 2px 5px rgba(212, 14, 57, 0.9);
 
     }
+    .checar{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        /* modifica o tipo do cursor */
+        cursor: pointer;
+        /* limpar cofigurações de aparencia */
+        appearance: none;
+        background-color: #fff;
+        border: 2px solid #0dff00;
+        border: 5px;
+    }
+.checar:checked{
+    background-color: #0dff00;
+}
+.email{
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px, solid white;
+}
+.selecao{
+    appearance: none;
+    width: 300px;
+    font-size: 16px;
+    color: #a3f3fa;
+    background-color: cornflowerblue;
+    border: 2px, solid #854848;
+    border-radius: 5px;
+    /* sombra do input */
+    box-shadow: 0 2px 5px #060505(0,0,0,0);
+}
+.radio{
+    appearance: nome;
+    width: 20px;
+    height: 20px;
+    border: 20px solid #fe2b0f;
+    border-radius: 50%;
+}
+/* pseuclass, quando o estado do objeto mudar vai colocar uma nova propriedade */
+.radio.checked{
+    background-color: #fe2b0f;
+    border-color: #0dff00;
+}
