@@ -1,0 +1,51 @@
+.div-1{
+    background-color: blue;
+}
+.div-2{
+    background-color: red;
+}
+.container{
+    border: 2px solid black;
+    /* limitar o tamanho do elemento */
+    max-width: 400px;
+    margin: 0 auto;
+    /* posibilitar a flexibilização de modelos fisicos */
+    display: flex;
+}
+.img-ta{
+    width: 150px;
+    height: 150px;
+}
+.alinhar-d{
+    display: flex;
+    justify-content: right;
+}
+.alinhar-c{
+    display: flex;
+    justify-content: center;
+}
+.alinhar-e{
+    display: flex;
+    justify-content: left
+}
+.alinhar-entre{
+    display: flex;
+    justify-content: space-between
+}
+.alinhar-redor{
+    display: flex;
+    /* distribui no espaço ao redor */
+    justify-content: space-around
+}
+.alinhar-coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quebar{
+    display: flex;
+    /* colocar espaço entre os elementos */
+    gap: 10px;
+    /* quebrar os elementos para outra linha caso não aja espaço usuficiente */
+    flex-wrap: wrap;
+}
