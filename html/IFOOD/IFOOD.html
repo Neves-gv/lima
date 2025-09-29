@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,58 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- utilizando uma tag para criar um cabecalho -->
-     <header class="cabecalho">
+    <header class="cabecalho">
         <div class="content">
             <img src="imagemdoifood.png" alt="" class="logo">
             <!-- utilizando o nav para a navegação -->
-            <nav>
-                <a href="#">Restaurantes</a>
-                <a href="#">Mercado</a>
-                <a href="#">Bebidas</a>
-                <a href="#">farmacia</a>
-                <a href="#">pet_shop</a>
+            <nav class="navegacao">
+                <a href="#" class="item">Restaurantes</a>
+                <a href="#" class="item">Mercado</a>
+                <a href="#" class="item">Bebidas</a>
+                <a href="#" class="item">farmacia</a>
+                <a href="#" class="item">pet_shop</a>
             </nav>
-            <div></div>
-            <div></div>
+            <div>
+                <input type="text" placeholder="Busque por item ou loja" class="buscar">
+                <div class="localizacao">
+                    <samp>📍</samp>
+                    <input type="text" value="Andradina, SP" class="texto-local">
+                </div>
+            </div>
+            <div class="acao">
+                <a href="#" class="criar-conta">Criar Conta</a>
+                <button class="botao-entrar">Entrar</button>
+            </div>
         </div>
-     </header>
-    
+    </header>
+    <div class="Ri">
+        <div class="lojas">
+            <img src="./imagensifood/almo.png" class="img-lojas">
+            <p>Almoços</p>
+        </div>
+        <div class="lojas">
+            <img src="./imagensifood/com.png" class="img-lojas">
+            <p>Mercado</p>
+        </div>
+        <div class="lojas">
+            <img src="./imagensifood/be.png" class="img-lojas">
+            <p>Bebidas</p>
+        </div>
+        <div class="lojas">
+            <img src="./imagensifood/pro.png" class="img-lojas">
+            <p>promoção</p>
+        </div>
+        <div class="lojas">
+            <img src="./imagensifood/pi.png" class="img-lojas">
+            <p>pizza</p>
+        </div>
+    </div>
 </body>
 </html>
