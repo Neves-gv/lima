@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super car</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+       <header class="cabecalho">
+        <div class="content">
+            <img src="logo.png" alt="" class="logo">
+            <!-- utilizando o nav para a navegação -->
+            <nav class="navegacao">
+                <a href="#" class="item">Inicio</a>
+                <a href="#" class="item">carros</a>
+                <a href="#" class="item">Carros semi novos</a>
+                <a href="#" class="item">contato</a>
+            </nav>
+            <div class="acao">
+                <a href="#modal-cadastro" class="criar-conta">Criar Conta</a>
+                <button class="botao-entrar">Entrar</button>
+            </div>
+        </div>
+        <!-- molda criar conta -->
+     <div id="modal-cadastro" class="modal-container">
+      <div class="modal-box">
+        <div class="modal-cabecalho">
+
+        </div>
+        <!-- CABECALHO -->
+        <h2>Criar Conta</h2>
+        <a href="" class="fechar">&times;</a>
+       
+        <form action="" class="formulario">
+          <!-- corpo -->
+           <div class="grupo-form">
+            <label for="Nome completo">Nome completo</label>
+            <input id="Nomme completo" type="text" placeholder="Digite seu nome completo" required>
+           </div>
+      <div>
+
+         <div class="grupo-form">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="VN@nissan.v8" required>
+           </div>
+      <div>
+
+        <div class="grupo-form">
+            <label for="senha">Senha</label>
+            <input id="senha" type="password" placeholder="Crie uma senha forte" required>
+           </div>
+           <button type="submit" class="botao-criar">Criar Conta</button>
+        </form>
+      <div class="modal-rodape">
+        <!-- rodape-->
+         <p>Ja tem conta? <a href="">Entrar</a></p>
+      </div>
+      </div>
+
+     </div>
+    </header>
+</body>
+</html>

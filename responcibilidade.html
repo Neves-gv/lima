@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Responsivo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        /* adicionando o css interno */
+        body {
+            font-family: 'teko', sans-serif;
+            background-color: black;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .info-tela {
+            font-size: 1.8rem;
+            color: rgb(37, 61, 196);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .texto-Tablet,
+        .texto-notebook,
+        .texto-Tela-grande {
+            display: none;
+        }
+
+        .cartão-jogador {
+            background: linear-gradient(60deg, #2c3e50, #162447);
+            border-radius: 15px;
+            border: 2px solid #00aeff;
+            box-shadow: 0 0 25px rgba(0, 174, 255, 0.5);
+            width: 280px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: all 0.4s ease-in-out;
+        }
+
+        .molde-avatar {
+            border: 4px solid #00aeff;
+            border-radius: 50%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .info-jogador h2 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .status {
+            font-size: 1.3rem;
+            color: rgb(46, 217, 194);
+            text-transform: uppercase;
+        }
+
+        .atributos {
+            display: none;
+        }
+
+        /* Media querles para ajustar e o conteudo se adptar a tela */
+        @media (min-width: 600px) {
+            .texto-celular {
+                display: none;
+            }
+
+            .texto-Tablet {
+                display: block;
+            }
+
+            .cartão-jogador {
+                flex-direction: row;
+                width: 550px;
+            }
+
+            .molde-avatar {
+                margin: 0 25px 0 0;
+            }
+
+            .avatar {
+                width: 140px;
+                height: 140px;
+            }
+
+            .info-jogador,
+            .status {
+                text-align: left;
+            }
+
+            .atributos {
+                display: flex;
+                flex-direction: column;
+                gap: 5px 20px;
+                width: 100%;
+                margin-top: 15px;
+                color: #0245ff;
+            }
+
+            .item-atributo {
+                font-size: 1.3rem;
+            }
+
+            .item-atributo strong {
+                font-size: 1.5rem;
+                color: #ffffff;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .texto-Tablet {
+                display: none;
+            }
+
+            .texto-notebook {
+                display: block;
+            }
+
+            .cartão-jogador {
+                width: 650px;
+                padding: 30px;
+            }
+
+            .avatar {
+                width: 160px;
+                height: 160px;
+            }
+
+            .info-jogador h2 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Aprndendo Responsividade</h1>
+    <div class="info-tela">
+        <samp class="texto-celular">Visualização: celular</samp>
+        <samp class="texto-Tablet">Visualização: Tablet</samp>
+        <samp class="texto-notebook">Visualização: notebook</samp>
+        <samp class="texto-Tela-grande">Visualização: Tela grande</samp>
+    </div>
+    <main>
+        <div class="cartão-jogador">
+            <div class="molde-avatar">
+                <img class="avatar" alt="" srcset="https://robohash.org/Cyra.png?set=set4">
+            </div>
+            <div class="container-info">
+                <div class="info-jogador">
+                    <h2>CYRA</h2>
+                    <div class="status">Online</div>
+                </div>
+                <div class="atributos">
+                    <div class="item-atributo">Nivel: <strong>1</strong></div>
+                    <div class="item-atributo">class: <strong>Lutador</strong></div>
+                    <div class="item-atributo">Poder: <strong>♾️</strong></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

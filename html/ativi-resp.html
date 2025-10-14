@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativ-resp</title>
+    <style>
+        .info-cama {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin: 0 auto;
+            transition: all 0.6s ease;
+        }
+
+        .azul,
+        .amare,
+        .roxo {
+            display: none;
+        }
+
+        @media (min-width: 600px) {
+            .info-cama {
+                width: 150px;
+                height: 150px;
+                background-color: rgb(55, 0, 255);
+            }
+
+            .verme {
+                display: none;
+            }
+
+            .azul {
+                display: block;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .info-cama {
+                width: 200px;
+                height: 200px;
+                background-color: rgb(242, 255, 0);
+            }
+
+            .azul {
+                display: none;
+            }
+
+            .amare {
+                display: block;
+            }
+        }
+
+
+        @media (min-width: 1200px) {
+            .info-cama {
+                width: 250px;
+                height: 250px;
+                background-color: rgb(183, 0, 255);
+            }
+
+            .amare {
+                display: none;
+            }
+
+            .roxo {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info-cama">
+        <samp class="verme">Visualização: VERMELHO</samp>
+        <samp class="azul">Visualização: AZUL</samp>
+        <samp class="amare">Visualização: AMARELO</samp>
+        <samp class="roxo">Visualização: ROXO</samp>
+    </div>
+</body>
+
+</html>
