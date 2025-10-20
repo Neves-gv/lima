@@ -27,8 +27,8 @@
     transition: tranform 0.3s ease;
     /* evita que o card encolha */
     flex: 0 0 auto;
+    
 }
 .asd{
     display: flex;
-    justify-content: space-evenly;
 }

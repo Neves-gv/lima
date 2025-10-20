@@ -1,6 +1,6 @@
-.card-imagem < img{
+.card-imagem > img{
     max-width: 100%;
-    height: 50px;
+    height: 100px;
 }
 .card-imagem >figcaption{
     font-size: 0.8rem;
