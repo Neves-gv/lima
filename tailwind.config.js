@@ -1,6 +1,7 @@
 Module.exports = {
     content:[
-        "./html"
+        "./html",
+        "./Quintanda-online/*.html"
     ],
     theme: {
         extend: {},
