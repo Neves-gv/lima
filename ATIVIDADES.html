@@ -1,92 +1,133 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="ATIVIDADES.CSS">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividades</title>
+  <link rel="stylesheet" href="ATIVIDADES.CSS">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-gray-100">
-    <h1 class="text-4xl">ATIVIDADES</h1>
-    <section class="asd">
-        <main>
-            <a href="./html/ex1.html" class="sec">EX-1
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/hell1.png" width="150px">
-            </a>
-        </main>
-        <main>
-            <a href="./html/ex2.html" class="sec">contos de fada
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/kava.png" width="150px">
-            </a>
-        </main>
-        <main>
-            <a href="./html/ex5.html" class="sec">receitas
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/lan.png" width="150px">
-            </a>
-        </main>
-        <main>
-            <a href="./html/ex4.html" class="sec">EX-4
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/ninja1000sx.png" width="150px">
-            </a>
-        </main>
-        <main>
-            <a href="./html/cards.html " class="sec">Card
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/srt.png" width="150px">
-            </a>
-        </main>
-        <main>
-            <a href="./html/IFOOD/IFOOD.html" class="sec">IFOOD
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/to.png" width="150px">
-            </a>
-        </main>
-    </section>
-    <section class="asd">
-        <main>
-            <a href="./html/Starbuchs/inicio.html" class="sec">Starbuchs
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/bra.png" width="150px">
-            </a>
-        </main>
-        <main>
-            <a href="html/ativi-resp.html" class="sec">Ativ-resp
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/fib.png" width="150px">
-            </a>
-        </main>
-        <main>
-            <a href="./aula-grid.html" class="sec">aula-grid
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/hellverde.png" width="150px">
-            </a>
-        </main>
-        <main>
-            <a href="./grid-card.html" class="sec">grid-card
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/suY.png" width="150px">
-            </a>
-        </main>
-        <main>
-            <a href="./Ativ-grid.html" class="sec">Ativ-grid
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/lamborroxa.png" width="150px">
-            </a>
-        </main>
-        <main>
-            <a href="./Quitanda-online/index.html" class="sec">Quitanda-online
-                <figure class="card-imagem">
-                    <img src="./imagens_p_ta/bug.png" width="150px">
-            </a>
-        </main>
-    </section>
+<body class="bg-slate-600">
+  <h1 class="text-4xl text-center my-6 font-bold text-white">ATIVIDADES</h1>
+  <!-- SEÇÃO GERAL -->
+  <main class="flex flex-wrap justify-center gap-6 p-6">
+    <!-- MODELO DE CARD -->
+    <a href="./html/ex1.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">EX-1</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/hell1.png" class="w-32 h-32 object-contain" alt="Exercício 1">
+      </figure>
+    </a>
+    <a href="./html/ex2.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">Contos de fada</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/kava.png" class="w-32 h-32 object-contain" alt="Contos de fada">
+      </figure>
+    </a>
+    <a href="./html/ex5.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">Receitas</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/lan.png" class="w-32 h-32 object-contain" alt="Receitas">
+      </figure>
+    </a>
+    <a href="./html/ex4.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">EX-4</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/ninja1000sx.png" class="w-32 h-32 object-contain" alt="Exercício 4">
+      </figure>
+    </a>
+    <a href="./html/cards.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">Card</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/srt.png" class="w-32 h-32 object-contain" alt="Card">
+      </figure>
+    </a>
+    <a href="./html/IFOOD/IFOOD.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">IFOOD</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/to.png" class="w-32 h-32 object-contain" alt="IFOOD">
+      </figure>
+    </a>
+    <a href="./html/Starbuchs/inicio.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">Starbuchs</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/bra.png" class="w-32 h-32 object-contain" alt="Starbuchs">
+      </figure>
+    </a>
+    <a href="./html/ativi-resp.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">Ativ-resp</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/fib.png" class="w-32 h-32 object-contain" alt="Atividade Responsiva">
+      </figure>
+    </a>
+    <a href="./aula-grid.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">Aula-grid</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/hellverde.png" class="w-32 h-32 object-contain" alt="Aula Grid">
+      </figure>
+    </a>
+    <a href="./grid-card.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">Grid-card</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/suY.png" class="w-32 h-32 object-contain" alt="Grid Card">
+      </figure>
+    </a>
+    <a href="./Ativ-grid.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">Ativ-grid</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/lamborroxa.png" class="w-32 h-32 object-contain" alt="Atividade Grid">
+      </figure>
+    </a>
+    <a href="./Quitanda-online/index.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">Quitanda-online</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/bug.png" class="w-32 h-32 object-contain" alt="Quitanda Online">
+      </figure>
+    </a>
+    <a href="./JavaScript/teoria.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">Teoria-JavaScript</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/Opala.png" class="w-32 h-32 object-contain" alt="Teoria JavaScript">
+      </figure>
+    </a>
+    <a href="./JavaScript/EX/Ativ-Java.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">JavaScript Ativ1</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/Impala.png" class="w-32 h-32 object-contain" alt="Atividade JavaScript 1">
+      </figure>
+    </a>
+    <a href="./JavaScript/EX/Ativ-Java2.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">JavaScript Ativ2</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/supra.png" class="w-32 h-32 object-contain" alt="Atividade JavaScript 2">
+      </figure>
+    </a>
+    <a href="./JavaScript/EX/Ativ-java3.html"
+      class="sec bg-white shadow-lg rounded-lg w-48 h-60 flex flex-col items-center justify-between p-4 hover:scale-105 hover:shadow-2xl transition-transform duration-300 text-center">
+      <span class="font-semibold text-gray-800">JavaScript Ativ3</span>
+      <figure class="card-imagem">
+        <img src="./imagens_p_ta/Transam.png" class="w-32 h-32 object-contain" alt="Atividade JavaScript 2">
+      </figure>
+    </a>
+
+  </main>
 </body>
 
 </html>

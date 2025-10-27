@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoria JavaScript</title>
+
+    <!-- Importando Tailwind CSS corretamente -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-500 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-lg shadow-xl max-w-md w-full">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Teoria JavaScript</h1>
+
+        <div class="space-y-6">
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button onclick="botaoteste()" class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg
+                     hover:bg-blue-700 transition duration-200 ease-out">Clique
+                    aqui</button>
+
+                <button onclick="botaoNome()" class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg
+                     hover:bg-blue-700 transition duration-200 ease-out">Qual
+                    seu nome</button>
+            </div>
+
+            <div class="space-y-3">
+                <button onclick="botaosoma()" class="w-full bg-green-500 text-white font-semibold py-2 px-4 rounded-lg
+                     hover:bg-green-700 transition duration-200 ease-out">Somando
+                    números</button>
+
+                <p id="resultado" class="bg-gray-400 p-4 rounded-md text-gray-700 min-h-[50px] border border-gray-200">
+                    Aqui exibimos nosso resultado
+                </p>
+            </div>
+        </div>
+        <div class="space-y-3 mt-6">
+            <input type="text" id="input-cidade" placeholder="Digite o nome de uma cidade" class="w-full border
+             border-gray-300 p-2 rounded-lg 
+        focus:outline-none focus:ring-2 focus:ring-purple-700 transition">
+            <button onclick="cidade()" class="w-full bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg
+                 hover:bg-purple-700 transition duration-200 ease-out">Validar
+                cidade</button>
+            <p id="resultadoCit" class="bg-gray-400 p-4 rounded-md text-gray-700 min-h-[50px] border border-gray-200">
+            </p>
+        </div>
+    </div>
+    <script>
+        // Exibindo mensagens no console
+        console.log('Testando JS WEB');
+        console.error("Esta é uma mensagem de ERRO!");
+        console.warn("Esta é uma mensagem de ALERTA!");
+        console.info("Esta é uma mensagem de INFORMAÇÃO!");
+
+        // Funções JS
+        function botaoteste() {
+            alert("Botão clicado!");
+        }
+
+        function botaoNome() {
+            var nome = prompt('Qual seu nome?');
+            confirm(`Olá, ${nome}! Entendeu JS?`);
+        }
+
+        function botaosoma() {
+            var N1 = Number(prompt('Número 1?'));
+            var N2 = Number(prompt('Número 2?'));
+
+            document.getElementById("resultado").innerHTML += `<br>${N1 + N2}`;
+        }
+
+        function cidade() {
+
+            var nomeCidade = document.getElementById("input-cidade").value;
+
+            document.getElementById("resultadoCit").innerHTML = nomeCidade
+        }
+    </script>
+</body>
+
+</html>

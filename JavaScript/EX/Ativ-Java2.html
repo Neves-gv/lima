@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativdade JavaScript2</title>
+    <!-- Importando Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-500 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-lg shadow-xl max-w-md w-full">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Teoria JavaScript</h1>
+
+        <div class="space-y-6">
+            <button onclick="botaosoma()"
+                class="w-full bg-green-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition duration-200 ease-out">
+                Somar números
+            </button>
+
+            <button onclick="botaomeno()" class="w-full bg-yellow-500 text-white font-semibold py-2 px-4 rounded-lg
+       hover:bg-yellow-700 transition duration-200 ease-out">
+                Subtrair números
+            </button>
+
+            <button onclick="botaodivi()" class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg
+       hover:bg-blue-700 transition duration-200 ease-out">
+                Dividir números
+            </button>
+
+            <button onclick="botaomultipli()" class="w-full bg-purple-500 text-white font-semibold py-2 px-4 rounded-lg
+       hover:bg-purple-700 transition duration-200 ease-out">
+                Multiplicar números
+            </button>
+
+            <p id="resultado" class="bg-gray-200 p-4 rounded-md text-gray-700 min-h-[50px] border
+       border-gray-300 text-center">
+                Aqui exibimos nosso resultado
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function botaosoma() {
+            const N1 = Number(prompt('Número 1?'));
+            const N2 = Number(prompt('Número 2?'));
+            document.getElementById("resultado").innerHTML = `Resultado: ${N1 + N2}`;
+        }
+
+        function botaomeno() {
+            const N1 = Number(prompt('Número 1?'));
+            const N2 = Number(prompt('Número 2?'));
+            document.getElementById("resultado").innerHTML = `Resultado: ${N1 - N2}`;
+        }
+
+        function botaodivi() {
+            const N1 = Number(prompt('Número 1?'));
+            const N2 = Number(prompt('Número 2?'));
+            document.getElementById("resultado").innerHTML = `Resultado: ${N1 / N2}`;
+        }
+
+        function botaomultipli() {
+            const N1 = Number(prompt('Número 1?'));
+            const N2 = Number(prompt('Número 2?'));
+            document.getElementById("resultado").innerHTML = `Resultado: ${N1 * N2}`;
+        }
+    </script>
+</body>
+
+</html>
