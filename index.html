@@ -3,53 +3,57 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=], inttial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pagina Principal</title>
-        <link rel="stylesheet" href="Ativ_card.css">
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <boby>
-        <h1 class="titulo">Bem-vindo ao nosso espaço de aprendizagem!</h1>
-        <h2 class="subtit">Acesse nossas páginas</h2>
-        <section class="asd">
-            <!-- Card Teoria -->
+
+    <body class="bg-black min-h-screen p-8">
+        <h1 class="text-4xl font-bold text-center text-red-600 mb-4">Bem-vindo ao nosso espaço de aprendizagem!</h1>
+        <h2 class="text-xl text-center text-red-600 mb-10">Acesse nossas páginas</h2>
+
+        <section class="flex flex-wrap justify-center gap-8">
+
             <a href="teoria.html">
-                <article class="sec">
-                    <figure class="card-imagem">
-                        <img src="teo.png" width="150px" alt="Imagem Teoria">
-                        <figcaption>Teoria</figcaption>
+                <article
+                    class="bg-gray-800 border-4 border-red-600 rounded-lg p-6 w-52 text-center shadow-lg transform hover:scale-105 transition duration-300">
+                    <figure class="flex flex-col items-center">
+                        <img src="teo.png" width="150px" alt="Imagem Teoria" class="mb-3">
+                        <figcaption class="text-white font-semibold text-lg">Teoria</figcaption>
                     </figure>
                 </article>
             </a>
 
-            <!-- Card Atividades -->
             <a href="ATIVIDADES.html">
-                <article class="sec">
-                    <figure class="card-imagem">
-                        <img src="ati.png" width="150px" alt="Imagem Atividades">
-                        <figcaption>Atividades</figcaption>
+                <article
+                    class="bg-gray-800 border-4 border-red-600 rounded-lg p-6 w-52 text-center shadow-lg transform hover:scale-105 transition duration-300">
+                    <figure class="flex flex-col items-center">
+                        <img src="ati.png" width="150px" alt="Imagem Atividades" class="mb-3">
+                        <figcaption class="text-white font-semibold text-lg">Atividades</figcaption>
                     </figure>
                 </article>
             </a>
 
-            <!-- Meu site -->
             <a href="Meu site/site.html">
-                <article class="sec">
-                    <figure class="card-imagem">
-                        <img src="logo.png" width="150px" alt="Imagem Atividades">
-                        <figcaption>Meu site</figcaption>
+                <article
+                    class="bg-gray-800 border-4 border-red-600 rounded-lg p-6 w-52 text-center shadow-lg transform hover:scale-105 transition duration-300">
+                    <figure class="flex flex-col items-center">
+                        <img src="logo.png" width="150px" alt="Imagem Atividades" class="mb-3">
+                        <figcaption class="text-white font-semibold text-lg">Meu site</figcaption>
                     </figure>
                 </article>
             </a>
-            <!-- tailwind -->
+
             <a href="./tailwind.html">
-                <article class="sec">
-                    <figure class="card-imagem">
-                        <img src="./hellblu.png" width="150px" alt="Imagem Atividades">
-                        <figcaption>Tailwind</figcaption>
+                <article
+                    class="bg-gray-800 border-4 border-red-600 rounded-lg p-6 w-52 text-center shadow-lg transform hover:scale-105 transition duration-300">
+                    <figure class="flex flex-col items-center">
+                        <img src="./hellblu.png" width="150px" alt="Imagem Atividades" class="mb-3">
+                        <figcaption class="text-white font-semibold text-lg">Tailwind</figcaption>
                     </figure>
                 </article>
             </a>
         </section>
-        </body>
+    </body>
 
-        </html>
+    </html>

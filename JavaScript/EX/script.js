@@ -1,4 +1,4 @@
-
+// MENU MOBILE
 const botaoHamburguer = document.querySelector('#btn-hamburguer');
 const menuMobile = document.querySelector('#menu-mobile');
 
@@ -6,23 +6,24 @@ botaoHamburguer.addEventListener('click', () => {
   menuMobile.classList.toggle('hidden');
 });
 
-
+// DROPDOWNS
 const gatilhoDropDownWeb = document.querySelector('#gatilho-dropdown-web');
 const menuDropDownWeb = document.querySelector('#menu-dropdown-web');
 const gatilhoDropDownMobile = document.querySelector('#gatilho-dropdown-mobile');
 const menuDropDownMobile = document.querySelector('#menu-dropdown-mobile');
 
-gatilhoDropDownWeb.addEventListener('click', () => {
+gatilhoDropDownWeb.addEventListener('click', (e) => {
   e.preventDefault();
   menuDropDownWeb.classList.toggle('hidden');
   menuDropDownMobile.classList.add('hidden');
 });
 
-gatilhoDropDownMobile.addEventListener('click', () => {
+gatilhoDropDownMobile.addEventListener('click', (e) => {
   e.preventDefault();
   menuDropDownMobile.classList.toggle('hidden');
 });
 
+// CARROSSEL
 const containerSlides = document.querySelector('#carrossel-slider');
 const todosOsSlides = document.querySelectorAll('.slide-carrossel');
 const btnAnterior = document.querySelector('#btn-anterior');
@@ -44,6 +45,5 @@ btnProximo.addEventListener('click', () => {
   slideAtual = (slideAtual + 1) % totalSlides;
   atualizarCarrossel();
 });
-
 
 atualizarCarrossel();
