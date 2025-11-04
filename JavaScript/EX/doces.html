@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces Neves</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./script.js"></script>
+</head>
+
+<body class="bg-black text-blue-200 font-sans">
+    <!-- HEADER -->
+    <header class="bg-blue-700 shadow-sm sticky top-0 z-50 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="flex items-center text-xl font-bold text-blue-200">
+                    <img class="h-10 w-10 mr-3 rounded-full border-2 border-blue-400" src="logo.png"
+                        alt="Logo Doces Neves">
+                    <span>Doces Neves</span>
+                </a>
+
+                <nav class="hidden md:flex items-center space-x-7" id="nav-web">
+                    <a href="#" class="text-white hover:text-blue-300 font-medium transition-colors"><i
+                            class="fas fa-home mr-1"></i> Principal</a>
+                    <a href="#" class="text-white hover:text-blue-300 font-medium transition-colors"><i
+                            class="fas fa-heart mr-1"></i> Favoritos</a>
+                    <a href="#" class="text-white hover:text-blue-300 font-medium transition-colors"><i
+                            class="fas fa-tags mr-1"></i> Promoções</a>
+
+                    <div class="relative">
+                        <a href="#" class="text-white hover:text-blue-300 font-medium transition-colors"
+                            id="gatilho-dropdown-web">
+                            <i class="fas fa-user mr-1"></i> Minha Conta <i class="fas fa-caret-down text-xs"></i>
+                        </a>
+                        <ul class="absolute right-0 mt-2 w-48 bg-black rounded-md shadow-lg py-1 z-20 hidden"
+                            id="menu-dropdown-web">
+                            <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-700">Meus
+                                    Pedidos</a></li>
+                            <li><a href="#"
+                                    class="block px-4 py-2 text-sm text-white hover:bg-blue-700">Configurações</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-blue-700">Sair</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <button class="md:hidden text-blue-300 text-2xl" id="btn-hamburguer">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- MENU MOBILE -->
+    <nav class="md:hidden bg-blue-700 text-white shadow-md hidden" id="menu-mobile">
+        <ul class="flex flex-col">
+            <div><a href="#" class="block p-4 hover:bg-blue-800">Principal</a></div>
+            <div><a href="#" class="block p-4 hover:bg-blue-800">Favoritos</a></div>
+            <div><a href="#" class="block p-4 hover:bg-blue-800">Promoções</a></div>
+            <div>
+                <a href="#" class="flex justify-between items-center p-4 hover:bg-blue-800"
+                    id="gatilho-dropdown-mobile">
+                    <span>Minha Conta</span>
+                    <i class="fas fa-caret-down text-xs"></i>
+                </a>
+                <ul class="bg-black hidden" id="menu-dropdown-mobile">
+                    <div><a href="#" class="block pl-8 pr-4 py-3 text-sm hover:bg-blue-800">Meus Pedidos</a></div>
+                    <div><a href="#" class="block pl-8 pr-4 py-3 text-sm hover:bg-blue-800">Configurações</a></div>
+                    <div><a href="#" class="block pl-8 pr-4 py-3 text-sm hover:bg-blue-800">Sair</a></div>
+                </ul>
+            </div>
+        </ul>
+    </nav>
+    <!-- CARROSSEL -->
+    <main>
+        <section class="relative w-full overflow-hidden bg-black" style="height: 450px;">
+            <button id="btn-anterior" class="absolute top-1/2 left-4 -translate-y-1/2 z-10 bg-blue-700
+       hover:bg-blue-800 rounded-full p-3 text-white text-2xl shadow-md transition-colors">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="btn-proximo" class="absolute top-1/2 right-4 -translate-y-1/2 z-10 bg-blue-700
+       hover:bg-blue-800 rounded-full p-3 text-white text-2xl shadow-md transition-colors">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <div class="flex h-full transition-transform duration-500 ease-in-out" id="carrossel-slider">
+                <div class="slide-carrossel min-w-full flex-shrink-0 h-full">
+                    <img src="ldksjfhgfh.png" alt="Banner Preto" class="w-full h-full object-cover">
+                </div>
+                <div class="slide-carrossel min-w-full flex-shrink-0 h-full">
+                    <img src="bl.png" alt="Banner Azul" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+        <!-- PRODUTOS -->
+        <section class="py-16 sm:py-24 bg-black">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-blue-400">Recomendados</h2>
+                <p class="text-lg text-center text-blue-300 mt-2 mb-12">Aproveite nossos melhores produtos</p>
+
+                <div class="space-y-10">
+                    <div class="bg-blue-900 rounded-lg shadow-xl overflow-hidden flex flex-col md:flex-row text-white">
+                        <div class="md:w-1/2">
+                            <img src="ti.png" alt="Tiramisu" class="h-full w-full object-cover">
+                        </div>
+                        <div class="md:w-1/2 p-8 flex flex-col justify-center">
+                            <h3 class="text-2xl font-bold text-blue-300 mb-3">Tiramisu</h3>
+                            <p class="mb-6">Uma sobremesa clássica e deliciosa para os amantes de café e creme.</p>
+                            <button class="bg-blue-700 text-white font-bold py-3 px-6 rounded-md hover:bg-blue-800
+               transition-colors self-start">Saiba mais</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-900 rounded-lg shadow-xl overflow-hidden flex flex-col md:flex-row text-white">
+                        <div class="md:w-1/2 p-8 flex flex-col justify-center order-2 md:order-1">
+                            <h3 class="text-2xl font-bold text-blue-300 mb-3">Bolo de Chocolate</h3>
+                            <p class="mb-6">Rico, úmido e irresistível — perfeito para qualquer ocasião!</p>
+                            <button class="bg-blue-700 text-white font-bold py-3 px-6 rounded-md hover:bg-blue-800 
+              transition-colors self-start">Saiba mais</button>
+                        </div>
+                        <div class="md:w-1/2 order-1 md:order-2">
+                            <img src="boloc.png" alt="Bolo de Chocolate" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Rodape -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-16 pt-12 pb-8">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h4 class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-4">Contato</h4>
+                <p class="mb-2 text-gray-300"><i class="fas fa-map-marker-alt text-blue-500 w-5 mr-1"></i> Alex Do João,
+                    1090</p>
+                <p class="text-gray-300"><i class="fas fa-phone text-blue-500 w-5 mr-1"></i> (18) 1212-90903</p>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-4">Vem-X1</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-blue-400 hover:text-blue-600 text-2xl"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600 text-2xl"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h4 class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-4">Buteco</h4>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-500">
+            <p>© 2025 - Doces Neves. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+</body>
+</html>

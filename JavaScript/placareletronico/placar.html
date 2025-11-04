@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar Eletrônico</title>
+    <!-- Importando Tailwind CSS corretamente -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./script.js"></script>
+</head>
+
+<body class="bg-gray-800 text-whiter flex flex-col items-center justify-center p-4">
+    <header class="mb-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-blue-400">Placar Eletronico</h1>
+    </header>
+    <section class="bg-gray-700 flex rounded-lg shadow-2xl items-center justify-around gap-20 p-4">
+        <div class="text-center flex flex-col items-center space-y-2">
+            <p class="text-2xl font-semibold mb-2 text-yellow-500">Casa</p>
+            <p id="pt1" class="text-6xl font-bold text-yellow-300 mb-4">0</p>
+            <button onclick="ponto1()" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">Gol</button>
+            <button onclick="zerar1()" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">Zerar</button>
+        </div>
+        <div class="text-center flex flex-col items-center space-y-2">
+            <p class="text-2xl font-semibold mb-2 text-yellow-500">Visitante</p>
+            <p id="pt2" class="text-6xl font-bold text-yellow-300 mb-4">0</p>
+            <button onclick="ponto2()" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">Gol</button>
+            <button onclick="zerar2()" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">Zerar</button>
+        </div>
+        <div class="text-center flex flex-col items-center">
+            <button onclick="zerar3()" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">Zerar Tudo</button>
+        </div>
+    </section>
+
+    <!-- Atividade 2 -->
+    <h1 class="text-4xl md:text-5xl font-bold text-blue-400">Placar Eletronico: Basquete</h1>
+    <section class="bg-gray-700 flex rounded-lg shadow-2xl items-center justify-around gap-20 p-4">
+        <div class="text-center flex flex-col items-center space-y-2">
+            <p class="text-2xl font-semibold mb-2 text-yellow-500">Casa</p>
+            <p id="pt3" class="text-6xl font-bold text-yellow-300 mb-4">0</p>
+            <div>
+                <button onclick="ponto1b(1)" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">+1</button>
+                <button onclick="ponto1b(2)" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">+2</button>
+                <button onclick="ponto1b(3)" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">+3</button>
+            </div>
+        </div>
+        <div class="text-center flex flex-col items-center space-y-2">
+            <p class="text-2xl font-semibold mb-2 text-yellow-500">Visitante</p>
+            <p id="pt4" class="text-6xl font-bold text-yellow-300 mb-4">0</p>
+            <div>
+                <button onclick="ponto2b(1)" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">+1</button>
+                <button onclick="ponto2b(2)" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">+2</button>
+                <button onclick="ponto2b(3)" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">+3</button>
+            </div>
+        </div>
+        <div class="text-center flex flex-col items-center">
+            <button onclick="zerar4()" class="bg-black text-white rounded-lg p-3 hover:bg-gray-900">Zerar Tudo</button>
+        </div>
+    </section>
+</body>
+
+</html>
